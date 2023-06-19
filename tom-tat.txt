@@ -1,0 +1,18 @@
+nodemon.json
+   - tác dụng: khi có sự thay đổi ở các đuôi file js, json thì ứng dụng nodejs sẽ được restart lại server.
+
+package-lock.json
+  - tác dụng: tự động của npm, quản lý những sự phụ thuộc chi tiết hơn.
+
+package.json
+  - tác dụng:
+		1/ khai báo được những script.
+		2/ cài đặt những sự phụ thuộc.
+Cấu trúc project:
+  - Có 1 thư mục source viết tắt là src, chúng ta sẽ viết mọi code của chúng ta ở trong đó.
+  - Trong src có các thư mục:
+      + public: quản lý những file tĩnh bao gồm css, img.
+      + resources: cấp cao hơn public
+          vd: file views sẽ phục vụ render cho view ứng dụng nodejs
+         Chúng ta đang dùng handlebars nên nó cung cấp cho chúng ta cơ chế quản lý về layout, partials, cũng như tự động load layout mà chúng ta không cần phải quan tâm.
+         Thư mục scss giúp chúng ta tích hợp css preprocessors => viết css nhanh hơn.
